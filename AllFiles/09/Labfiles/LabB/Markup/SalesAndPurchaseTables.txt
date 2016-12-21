@@ -1,0 +1,46 @@
+        <h2>Sales Summary</h2>
+        <asp:Table ID="SalesTable" runat="server">
+            <asp:TableHeaderRow>
+                <asp:TableHeaderCell>
+                    Region
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Local Currency
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Number of Sales
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Total Value in Local Currency
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Exchange Rate
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Total Value in US Dollars
+                </asp:TableHeaderCell>
+            </asp:TableHeaderRow>
+        </asp:Table>
+        <h2>Purchases Summary</h2>
+        <asp:Table ID="PurchasesTable" runat="server">
+            <asp:TableHeaderRow>
+                <asp:TableHeaderCell>
+                    Region
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Local Currency
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Number of Purchases
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Total Value in Local Currency
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Exchange Rate
+                </asp:TableHeaderCell>
+                <asp:TableHeaderCell>
+                    Total Value in US Dollars
+                </asp:TableHeaderCell>
+            </asp:TableHeaderRow>
+        </asp:Table>

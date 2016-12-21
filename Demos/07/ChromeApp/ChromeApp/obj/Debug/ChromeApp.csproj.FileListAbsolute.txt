@@ -1,0 +1,6 @@
+D:\ChromeApp\ChromeApp\bin\Debug\ChromeApp.pdb
+D:\ChromeApp\ChromeApp\obj\Debug\ChromeApp.dll
+D:\ChromeApp\ChromeApp\obj\Debug\ChromeApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\ChromeApp\ChromeApp\bin\Debug\ChromeApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\ChromeApp\ChromeApp\obj\Debug\ChromeApp.dll
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\ChromeApp\ChromeApp\obj\Debug\ChromeApp.pdb

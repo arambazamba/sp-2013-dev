@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="CrossDomainApp"
+     ProductID="{dc9f91a9-a20e-4b0a-8c83-5fa841ab469f}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>CrossDomainApp</Title>
+    <StartPage>http://localhost:40725/Pages/CrossDomainCallCSOM.html?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal AllowedRemoteHostUrl="http://localhost:40725" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
+  </AppPermissionRequests>
+</App>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Contoso Expenses" OnQuickLaunch="TRUE" TemplateType="10001" Url="Lists/Contoso Expenses" Description="A list to track contoso expenses. "></ListInstance>
+</Elements>

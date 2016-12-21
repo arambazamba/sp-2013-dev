@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Customer Information" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/CustomerInformation" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">1</Field>
+          <Field Name="CustomerName">Gustavo Achong</Field>
+          <Field Name="Details">Gustavo is Head Buyer and has the final decision of which companies to purchase from. He has shown an interest in products such as AA111 and AA468, however a deal was not achieved due to a disagreement on price.</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">2</Field>
+          <Field Name="CustomerName">Eli Bowen</Field>
+          <Field Name="Details">Eli runs a health food store in downtown Seattle and is interested in our vitamin supplement products. We have sold large amounts to him in the past, however he has not purchased from us in the last year.</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">3</Field>
+          <Field Name="CustomerName">Sara Davis</Field>
+          <Field Name="Details">Sara primarily buys products advertised on our website. She doesn't seem to have the time to browse our catalogue but will notice any products relevant to her that are advertised on the front page.</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">4</Field>
+          <Field Name="CustomerName">Suroor Fatima</Field>
+          <Field Name="Details">Suroor tends to buy products on a seasonal basis, ie hayfever products just before spring and cold/flu products in the autumn. He is however open to other products when speaking to him, so always a good idea to try to upsell.</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b4be728c-d590-4af4-a47d-eaac23e1942e}"
+       Name="ContosoManager"
+       DisplayName="Contoso Manager"
+       Type="User"
+       UserSelectionMode="0"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

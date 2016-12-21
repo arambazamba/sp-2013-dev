@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Pages">
+    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" />
+    <File Path="Pages\Home.html" Url="Pages/Home.html" />
+    <File Path="Pages\Account.html" Url="Pages/Account.html" />
+    <File Path="Pages\Contact.html" Url="Pages/Contact.html" />
+    <File Path="Pages\Help.html" Url="Pages/Help.html" />
+  </Module>
+</Elements>

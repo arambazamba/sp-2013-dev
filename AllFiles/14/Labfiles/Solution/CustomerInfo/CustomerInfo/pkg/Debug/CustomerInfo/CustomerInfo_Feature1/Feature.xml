@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="55765073-eb80-4606-ab39-d8e3f24a67b7" Scope="Web" Title="CustomerInfo Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.js" />
+    <ElementFile Location="Scripts\jquery-1.7.1.intellisense.js" />
+    <ElementFile Location="Scripts\CustomizeView.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.js" />
+    <ElementFile Location="Scripts\jquery-ui.js" />
+    <ElementFile Location="Scripts\jquery-ui.min.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Customer Information Instance\Elements.xml" />
+    <ElementManifest Location="CustomerInformation\Elements.xml" />
+    <ElementFile Location="CustomerInformation\Schema.xml" />
+    <ElementManifest Location="SiteAssets\Elements.xml" />
+    <ElementFile Location="SiteAssets\Sample.txt" />
+    <ElementFile Location="SiteAssets\Images\animated-overlay.gif" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_glass_50_3baae3_1x400.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <ElementFile Location="SiteAssets\Images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <ElementFile Location="SiteAssets\Images\ui-icons_2e83ff_256x240.png" />
+    <ElementFile Location="SiteAssets\Images\ui-icons_3d80b3_256x240.png" />
+    <ElementFile Location="SiteAssets\Images\ui-icons_72a7cf_256x240.png" />
+    <ElementFile Location="SiteAssets\Images\ui-icons_2694e8_256x240.png" />
+    <ElementFile Location="SiteAssets\Images\ui-icons_ffffff_256x240.png" />
+    <ElementFile Location="SiteAssets\jquery-ui.css" />
+    <ElementManifest Location="AddjQuery\Elements.xml" />
+    <ElementFile Location="AddjQuery\Sample.txt" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Customer Information Instance\Elements.xml" />
+        <ElementManifest Location="CustomerInformation\Elements.xml" />
+        <ElementManifest Location="SiteAssets\Elements.xml" />
+        <ElementManifest Location="AddjQuery\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

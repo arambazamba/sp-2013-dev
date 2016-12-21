@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="19add25a-383c-41b9-bd06-0779f841a0ec" solutionId="19add25a-383c-41b9-bd06-0779f841a0ec" resetWebServer="false" sharePointProductVersion="15.0" name="ContosoClaimsProvider" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3dc7f05d-17ab-46f2-8fe8-f50c6bc582cd" />
+  </features>
+</package>

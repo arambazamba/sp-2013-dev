@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7c90ff3d-9c9e-4e3a-a0ca-dc1ceba1d849}"
+       Name="Miles"
+       DisplayName="Miles"
+       Type="Integer"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

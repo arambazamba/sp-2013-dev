@@ -1,0 +1,11 @@
+﻿<Action Name="Distribution" ClassName="ProductDistributionProject.Distribution" Category="Custom" AppliesTo="all">
+  <RuleDesigner Sentence="Get distribution area for %1 (output to %2)">
+    <!-- Define the UI widgets SharePoint designer should use for configuring this action -->
+    <FieldBind Field="ProdName" Text="ProductName" Id="1" DesignerType="TextArea" />
+    <FieldBind Field="ProdDist" Text="Product distribution" Id="2" DesignerType="ParameterNames" />
+  </RuleDesigner>
+  <Parameters>
+    <Parameter Name="ProdName" Type="System.String, mscorlib" Direction="In" DesignerType="TextArea" Description="The name of the product" />
+    <Parameter Name="ProdDist" Type="System.String, mscorlib" Direction="Out" DesignerType="ParameterNames" Description="The distribution for the product" />
+  </Parameters>
+</Action>

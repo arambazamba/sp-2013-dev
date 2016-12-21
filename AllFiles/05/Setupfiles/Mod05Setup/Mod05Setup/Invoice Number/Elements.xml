@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{004727ee-67da-45d3-86ab-d4628b0acfe8}"
+       Name="InvoiceNumber"
+       DisplayName="Invoice Number"
+       Type="Text"
+       Required="FALSE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

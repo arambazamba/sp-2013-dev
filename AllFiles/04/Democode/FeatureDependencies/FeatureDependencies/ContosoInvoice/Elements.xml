@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x0101008C91F1D204A148C7AEFE3BA2F3EF035B" Name="Contoso Invoice" Group="Contoso Content Types" Description="Represents an invoice sent to a client." Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{1b185141-dd01-4c2e-8be2-8f18bbc686ef}" DisplayName="Client Name" Required="TRUE" Name="ClientName" />
+      <FieldRef ID="{8d4499da-2a45-444e-98d1-63f26cb6b4cc}" DisplayName="Invoice Amount" Required="TRUE" Name="InvoiceAmount" />
+      <FieldRef ID="{fdbe6858-f68c-4add-a423-85e9230dd245}" DisplayName="Due Date" Required="TRUE" Name="DueDate" Format="DateOnly" />
+      <FieldRef ID="{bd8519d1-54c4-4c75-957d-7449cd83f9a2}" DisplayName="Contoso Department" Required="TRUE" Name="ContosoDepartment" />
+      <FieldRef ID="{06b366a5-5e54-4a59-8fca-b50df4713546}" DisplayName="Invoice Status" Required="TRUE" Name="InvoiceStatus" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

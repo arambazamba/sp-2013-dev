@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{8d4499da-2a45-444e-98d1-63f26cb6b4cc}"
+       Name="InvoiceAmount"
+       DisplayName="Invoice Amount"
+       Type="Currency"
+       LCID="1033"
+       Decimals="2"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

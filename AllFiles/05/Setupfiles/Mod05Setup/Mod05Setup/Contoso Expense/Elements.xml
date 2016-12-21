@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100BE06A92479B043AA9CF1F818DED1D36F" Name="Contoso Expense" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{004727ee-67da-45d3-86ab-d4628b0acfe8}" DisplayName="Invoice Number" Required="TRUE" Name="InvoiceNumber" />
+      <FieldRef ID="{20309420-5c82-4e3c-9d6b-da8dd3eef83e}" DisplayName="Supplier Name" Required="TRUE" Name="SupplierName" />
+      <FieldRef ID="{836f4373-50df-470a-87af-55c437ca37f5}" DisplayName="Invoice Total" Required="TRUE" Name="InvoiceTotal" />
+      <FieldRef ID="{1a900545-a2b3-44b6-89df-0e412c37f24b}" DisplayName="Invoice Date" Required="TRUE" Name="InvoiceDate" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

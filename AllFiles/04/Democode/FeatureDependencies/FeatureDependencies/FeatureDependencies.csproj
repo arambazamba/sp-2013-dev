@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE5AAAA3-9AA2-427D-B072-EA1EB6204AF3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FeatureDependencies</RootNamespace>
+    <AssemblyName>FeatureDependencies</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClientName\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{40b19a8a-569c-45ed-ba65-f630721dd0c6}</SharePointProjectItemId>
+    </None>
+    <None Include="ContosoDepartment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{502589aa-2606-4f4e-9485-7b587bd43fcb}</SharePointProjectItemId>
+    </None>
+    <None Include="ContosoInvoice\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6da0a4c8-ce8a-4e86-8edf-eeec3629e40f}</SharePointProjectItemId>
+    </None>
+    <None Include="InvoiceDueDate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fd3d4566-72ce-4457-8c62-498201fc8dc2}</SharePointProjectItemId>
+    </None>
+    <None Include="InvoiceAmount\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67191910-11ac-4f8c-a49d-26dfc0e739ce}</SharePointProjectItemId>
+    </None>
+    <None Include="InvoiceStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e498df93-b049-44cb-a999-a73deda1194d}</SharePointProjectItemId>
+    </None>
+    <None Include="Invoices\InvoicesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3bbc4fc2-62af-49fd-9b64-3b5ff325fbb5}</SharePointProjectItemId>
+    </None>
+    <None Include="Invoices\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c2ec7675-76b9-49d8-960c-8c6d3d1bc82a}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{56f39c2e-2dec-456a-adcf-c06d8168f61d}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientName\Elements.xml" />
+    <Content Include="ContosoDepartment\Elements.xml" />
+    <Content Include="ContosoInvoice\Elements.xml" />
+    <Content Include="InvoiceDueDate\Elements.xml" />
+    <Content Include="InvoiceAmount\Elements.xml" />
+    <Content Include="InvoiceStatus\Elements.xml" />
+    <Content Include="Invoices\Elements.xml" />
+    <Content Include="Invoices\InvoicesInstance\Elements.xml" />
+    <Content Include="Invoices\Schema.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

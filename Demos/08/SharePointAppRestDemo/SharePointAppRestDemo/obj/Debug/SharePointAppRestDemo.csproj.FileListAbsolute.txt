@@ -1,0 +1,27 @@
+C:\DevProjects\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+C:\DevProjects\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+C:\DevProjects\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+C:\Demos\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+C:\Demos\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+C:\Demos\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+C:\Demos\TheCsomRestPartyPack\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+C:\Demos\TheCsomRestPartyPack\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+C:\Demos\TheCsomRestPartyPack\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+E:\Documents\Ignite\Dev\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+E:\Documents\Ignite\Dev\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+E:\Documents\Ignite\Dev\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+D:\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+D:\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+D:\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb
+D:\SharePoint 2013 Dev MOC\Demos\08\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\SharePointAppRestDemo.pdb
+D:\SharePoint 2013 Dev MOC\Demos\08\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.dll
+D:\SharePoint 2013 Dev MOC\Demos\08\SharePointAppRestDemo\SharePointAppRestDemo\obj\Debug\SharePointAppRestDemo.pdb

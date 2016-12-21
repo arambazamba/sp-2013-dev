@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Distribution" Url="Workflows/Distribution" Path="Distribution">
+    <File Url="Distribution.xaml" Type="Ghostable" DoGUIDFixUp="TRUE" />
+    <File Url="Distribution.actions4" Type="Ghostable" />
+  </Module>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="446e0b58-f3cf-4f5b-b83e-2f8a45d18c3d" 
+        solutionId="446e0b58-f3cf-4f5b-b83e-2f8a45d18c3d" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="CrossDomainApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="06533d1d-b73e-432a-ad08-4e3d2b204ee9" />
+  </features>
+</package>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="WebProxyApp"
+     ProductID="{03961bcf-1fdc-4dda-a7b2-466de57703ea}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>WebProxyApp</Title>
+    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <Internal />
+  </AppPrincipal>
+  <RemoteEndpoints>
+    <RemoteEndpoint Url="http://services.odata.org/Northwind/Northwind.svc/" />
+  </RemoteEndpoints>
+</App>

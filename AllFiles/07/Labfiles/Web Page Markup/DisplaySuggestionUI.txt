@@ -1,0 +1,12 @@
+    <div id="item-display">    
+       <div class="item-display-line">
+           <span class="item-display-label">Subject:</span>
+           <span id="item-display-subject" class="item-display-field"></span>
+       </div>
+       <div class="item-display-line">
+           <span class="item-display-label">Feedback:</span>
+           <span id="item-display-feedback" class="item-display-field"></span>
+       </div>
+    </div>
+
+    <div class="clear-floats"></div>

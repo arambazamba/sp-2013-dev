@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D72C0FC1-317D-41E5-9203-B38CCD77BC4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MileageRecorder</RootNamespace>
+    <AssemblyName>MileageRecorder</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{d6784e3b-137f-4cba-aa79-6cbbdafb0c06}</AppFeaturePartId>
+    <WspPartId>{39199acb-78c3-44a0-bf8c-b60dce7e2e7f}</WspPartId>
+    <WorkflowPartId>{b492f86f-6307-409e-8bc6-a24d6a5ffb87}</WorkflowPartId>
+    <CspkgPartId>{fdfd0544-5c60-4636-ae9c-8478f2035342}</CspkgPartId>
+    <SqlPackagePartId>{929bcff1-e8c5-43fe-855a-62181c83d149}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Claims\ClaimsInstance\Elements.xml" />
+    <Content Include="Claims\Elements.xml" />
+    <Content Include="Claims\Schema.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="MileageClaim\Elements.xml" />
+    <Content Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </Content>
+    <Content Include="SiteColumns\Amount\Elements.xml" />
+    <Content Include="SiteColumns\Destination\Elements.xml" />
+    <Content Include="SiteColumns\EngineSize\Elements.xml" />
+    <Content Include="SiteColumns\Miles\Elements.xml" />
+    <Content Include="SiteColumns\ReasonForTrip\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MileageRecorderRemoteWeb\MileageRecorderRemoteWeb.csproj">
+      <Project>{8B1E7EF9-69BB-4900-95ED-5C9A4AABF429}</Project>
+      <Name>MileageRecorderRemoteWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>MileageRecorderRemoteWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Claims\ClaimsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ea7763d6-a6cb-4ef1-8c9b-29b1a47b14a7}</SharePointProjectItemId>
+    </None>
+    <None Include="Claims\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{26abc31d-9cd4-47bd-8698-65c90ab2f0e2}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{13428b03-ac8c-4005-98cc-df880812c689}</FeatureId>
+    </None>
+    <None Include="MileageClaim\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0b80e2d5-8c25-416b-a5d1-fa5fe9ac27b9}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{45bf26b2-77e3-4ec1-91ed-d45ab920e106}</PackageId>
+    </None>
+    <None Include="SiteColumns\Amount\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac9092e6-bfe2-402c-887d-5b3bfb45245b}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\Destination\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{849db056-e98d-4110-ae06-0df951e9f3ac}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\EngineSize\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4c79c5b6-c903-49ce-b9d1-96bcccf43b11}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\Miles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{272726e3-e519-4726-be91-45a04cc552a7}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\ReasonForTrip\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8073394b-8301-47d9-b618-af1dd09e9c27}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="fb93c3ec-4117-41ac-ba6f-187ccedc588c" 
+        solutionId="fb93c3ec-4117-41ac-ba6f-187ccedc588c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="UsingSPMetal"
+        sharePointProductVersion="15.0">
+    <features>
+        <featureReference itemId="5b595ea0-464c-4bd3-8095-599ce76dd535" />
+    </features>
+</package>

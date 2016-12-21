@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="648de4e7-3f7c-47f5-bcf3-0e8032c53ee7" solutionId="648de4e7-3f7c-47f5-bcf3-0e8032c53ee7" resetWebServer="false" sharePointProductVersion="15.0" name="ContractorAgreements" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ee75223f-ddab-48f4-8fea-7ef0d6e66ec6" />
+    <featureReference itemId="d3816d26-627b-41a5-b34f-166c628e31d1" />
+  </features>
+</package>

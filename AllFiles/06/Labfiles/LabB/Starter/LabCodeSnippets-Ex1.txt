@@ -1,0 +1,18 @@
+******** Ex 1, Task 3: Implement Claims Augmentation ********
+******** FillClaimsForEntity method ********
+if (entity == null)
+{
+    throw new ArgumentNullException("entity");
+}
+if (claims == null)
+{
+    throw new ArgumentNullException("claims");
+}
+string currentLocation = getLocation(entity);
+SPClaim newClaim = CreateClaim(LocationClaimType, currentLocation, LocationClaimValueType);
+claims.Add(newClaim);
+
+
+******** Ex 1, Task 3: Implement Claims Augmentation ********
+******** SupportsEntityInformation method ********
+get { return true; }

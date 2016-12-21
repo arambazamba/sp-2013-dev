@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="addc3356-0b55-4164-b4f9-6bf1601ae90a" 
+        solutionId="addc3356-0b55-4164-b4f9-6bf1601ae90a" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="EditControlBlock"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="1d1f4546-bfb8-4f4e-94cf-1fd5318b2f5e" />
+  </features>
+</package>

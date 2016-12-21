@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Invoices" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Invoices" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0101008C91F1D204A148C7AEFE3BA2F3EF035B" Name="Contoso Invoice" Group="Contoso Content Types" Description="Represents an invoice sent to a client." Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{1b185141-dd01-4c2e-8be2-8f18bbc686ef}" DisplayName="Client Name" Required="TRUE" Name="ClientName" /><FieldRef ID="{8d4499da-2a45-444e-98d1-63f26cb6b4cc}" DisplayName="Invoice Amount" Required="TRUE" Name="InvoiceAmount" /><FieldRef ID="{fdbe6858-f68c-4add-a423-85e9230dd245}" DisplayName="Due Date" Required="TRUE" Name="DueDate" Format="DateOnly" /><FieldRef ID="{bd8519d1-54c4-4c75-957d-7449cd83f9a2}" DisplayName="Contoso Department" Required="TRUE" Name="ContosoDepartment" /><FieldRef ID="{06b366a5-5e54-4a59-8fca-b50df4713546}" DisplayName="Invoice Status" Required="TRUE" Name="InvoiceStatus" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{1b185141-dd01-4c2e-8be2-8f18bbc686ef}" Name="ClientName" DisplayName="Client Name" Type="Text" Required="TRUE" Group="Contoso Site Columns"></Field><Field ID="{8d4499da-2a45-444e-98d1-63f26cb6b4cc}" Name="InvoiceAmount" DisplayName="Invoice Amount" Type="Currency" LCID="1033" Decimals="2" Required="TRUE" Group="Contoso Site Columns"></Field><Field ID="{fdbe6858-f68c-4add-a423-85e9230dd245}" Name="DueDate" DisplayName="Due Date" Type="DateTime" Format="DateOnly" Required="TRUE" Group="Contoso Site Columns"></Field><Field ID="{bd8519d1-54c4-4c75-957d-7449cd83f9a2}" Name="ContosoDepartment" DisplayName="Contoso Department" Type="Choice" Required="TRUE" Group="Contoso Site Columns"><CHOICES><CHOICE>Production</CHOICE><CHOICE>Research</CHOICE><CHOICE>IT</CHOICE><CHOICE>Finance</CHOICE><CHOICE>Human Resources</CHOICE></CHOICES></Field><Field ID="{06b366a5-5e54-4a59-8fca-b50df4713546}" Name="InvoiceStatus" DisplayName="Invoice Status" Type="Choice" Required="TRUE" Group="Contoso Site Columns"><CHOICES><CHOICE>Pending</CHOICE><CHOICE>Paid</CHOICE><CHOICE>Under Review</CHOICE></CHOICES></Field><Field ID="{5f47e085-2150-41dc-b661-442f3027f552}" Name="SelectFilename" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="SelectFilename" Group="_Hidden" ReadOnly="TRUE" Type="Computed" DisplayName="$Resources:core,Select;" Hidden="TRUE" CanToggleHidden="TRUE" Filterable="FALSE" AuthoringInfo="$Resources:core,web_part_connection;" HeaderImage="blank.gif" Sortable="FALSE"><FieldRefs><FieldRef ID="{1d22ea11-1e32-424e-89ab-9fedbadb6ce1}" Name="ID" /></FieldRefs><DisplayPattern><IfEqual><Expr1><GetVar Name="SelectedID" /></Expr1><Expr2><Column Name="ID" /></Expr2><Then><HTML><![CDATA[<img align="absmiddle" style="cursor: hand" src="/_layouts/15/images/rbsel.gif?rev=23" alt="]]></HTML><HTML>Selected</HTML><HTML><![CDATA[">]]></HTML></Then><Else><HTML><![CDATA[<a href="javascript:SelectField(']]></HTML><GetVar Name="View" /><HTML><![CDATA[',']]></HTML><ScriptQuote NotAddingQuote="TRUE"><Column Name="ID" /></ScriptQuote><HTML><![CDATA[');return false;" onclick="javascript:SelectField(']]></HTML><GetVar Name="View" /><HTML><![CDATA[',']]></HTML><ScriptQuote NotAddingQuote="TRUE"><Column Name="ID" /></ScriptQuote><HTML><![CDATA[');return false;" target="_self">]]></HTML><HTML><![CDATA[<img border="0" align="absmiddle" style="cursor: hand" src="/_layouts/15/images/rbunsel.gif?rev=23"  alt="]]></HTML><HTML>Normal</HTML><HTML><![CDATA[">]]></HTML><HTML><![CDATA[</a>]]></HTML></Else></IfEqual></DisplayPattern></Field><Field ID="{822c78e3-1ea9-4943-b449-57863ad33ca9}" Name="Modified_x0020_By" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Modified_x0020_By" Group="_Hidden" ReadOnly="TRUE" Hidden="FALSE" Type="Text" DisplayName="$Resources:core,Document_Modified_By;" /><Field ID="{4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb}" Name="Created_x0020_By" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Created_x0020_By" Group="_Hidden" ReadOnly="TRUE" Hidden="FALSE" Type="Text" DisplayName="$Resources:core,Document_Created_By;" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="ClientName" /><FieldRef Name="InvoiceAmount" /><FieldRef Name="DueDate" /><FieldRef Name="ContosoDepartment" /><FieldRef Name="InvoiceStatus" /><FieldRef Name="Modified_x0020_By" /><FieldRef Name="Created_x0020_By" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

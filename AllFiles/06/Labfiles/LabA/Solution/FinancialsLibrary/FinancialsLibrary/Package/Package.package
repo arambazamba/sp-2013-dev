@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a5d03419-e205-4179-af35-0547d6529f66" solutionId="a5d03419-e205-4179-af35-0547d6529f66" resetWebServer="false" sharePointProductVersion="15.0" name="FinancialsLibrary" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="32cb7070-6acc-4848-bbc1-c7340ec2430d" />
+  </features>
+</package>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{7ca3dc9b-b091-4856-8676-ac3edab39897}"
+       Name="ContosoTeam"
+       DisplayName="Contoso Team"
+       Type="Choice"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+    <CHOICES>
+      <CHOICE>Research</CHOICE>
+      <CHOICE>Production</CHOICE>
+      <CHOICE>Audit</CHOICE>
+      <CHOICE>IT</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>

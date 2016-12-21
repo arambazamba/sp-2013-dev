@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE450C38-15D3-4946-8D7B-DBEFFC4959F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mod05Setup</RootNamespace>
+    <AssemblyName>Mod05Setup</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contoso Expenses\Contoso Expenses Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{eaca08f4-12d3-4635-bf37-ebf3d3e557bf}</SharePointProjectItemId>
+    </None>
+    <None Include="Contoso Expenses\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a1f9f396-3e7c-4882-9e4e-4b95e4475c32}</SharePointProjectItemId>
+    </None>
+    <None Include="Contoso Expense\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d06bce9-186a-4b8f-a9af-d345cfe35f21}</SharePointProjectItemId>
+    </None>
+    <None Include="Expenses Overview\Expenses Overview Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0cac47c-ceb6-477e-8262-a8ae971b4d15}</SharePointProjectItemId>
+    </None>
+    <None Include="Expenses Overview\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ea9ca30-727f-4986-abf5-37b7d8530979}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Contoso Expenses List\Contoso Expenses List.feature">
+      <FeatureId>{9c780a2b-d4e4-4dad-bd19-63126164e5b0}</FeatureId>
+    </None>
+    <None Include="Features\Managers Expense Overview List\Managers Expense Overview List.feature">
+      <FeatureId>{a9f1a024-e93c-4eb0-8b60-bd7f71868350}</FeatureId>
+    </None>
+    <None Include="Features\Site Content Type\Site Content Type.feature">
+      <FeatureId>{2822bc45-c1da-47f2-bb61-127f2af44d25}</FeatureId>
+    </None>
+    <None Include="Features\Site Columns\Site Columns.feature">
+      <FeatureId>{149b009f-d873-4cba-8afa-30c0c492be64}</FeatureId>
+    </None>
+    <None Include="Invoice Date\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6fb30c7a-a2f8-4fe7-ac1d-d1bf0638d8a8}</SharePointProjectItemId>
+    </None>
+    <None Include="Invoice Total\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f354a3f4-1cb5-403b-a002-8e48714fc028}</SharePointProjectItemId>
+    </None>
+    <None Include="Invoice Number\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aae137c1-7e97-4f3e-91ed-2f8ca3296a73}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{6b2870a7-709d-496e-8ec7-ccc14521dea9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Supplier Name\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf7bb580-3b50-433a-8b28-615f5587929f}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Contoso Expenses\Contoso Expenses Instance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contoso Expenses\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contoso Expenses\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Contoso Expense\Elements.xml" />
+    <Content Include="Expenses Overview\Elements.xml" />
+    <Content Include="Expenses Overview\Expenses Overview Instance\Elements.xml" />
+    <Content Include="Expenses Overview\Schema.xml" />
+    <Content Include="Features\Contoso Expenses List\Contoso Expenses List.Template.xml">
+      <DependentUpon>Contoso Expenses List.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Managers Expense Overview List\Managers Expense Overview List.Template.xml">
+      <DependentUpon>Managers Expense Overview List.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Site Content Type\Site Content Type.Template.xml">
+      <DependentUpon>Site Content Type.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Site Columns\Site Columns.Template.xml">
+      <DependentUpon>Site Columns.feature</DependentUpon>
+    </Content>
+    <Content Include="Invoice Date\Elements.xml" />
+    <Content Include="Invoice Total\Elements.xml" />
+    <Content Include="Invoice Number\Elements.xml" />
+    <Content Include="Supplier Name\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

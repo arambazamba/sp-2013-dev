@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Vacation Requests" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Vacation Requests" Description="Use this list to create and manage requests for vacations."></ListInstance>
+</Elements>

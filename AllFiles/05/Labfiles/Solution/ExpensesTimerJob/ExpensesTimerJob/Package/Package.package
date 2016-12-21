@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="31d9296b-45b3-494c-a42c-a4e59084728b" solutionId="31d9296b-45b3-494c-a42c-a4e59084728b" resetWebServer="false" sharePointProductVersion="15.0" name="ExpensesTimerJob" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="964f4d2e-4c78-4623-bdb5-dc7f269ae6b8" />
+  </features>
+</package>

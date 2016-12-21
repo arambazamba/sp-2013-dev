@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="79e9d37b-86c5-4abf-bd47-3497a1e8e17d" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="WebProxyApp_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

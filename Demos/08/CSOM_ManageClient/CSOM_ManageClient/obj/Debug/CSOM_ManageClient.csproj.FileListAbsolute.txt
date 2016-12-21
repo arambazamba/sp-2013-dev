@@ -1,0 +1,30 @@
+C:\DevProjects\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.exe
+C:\DevProjects\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.pdb
+C:\DevProjects\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+C:\DevProjects\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.exe
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.pdb
+D:\Ignite\Beta2\06 CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.csprojResolveAssemblyReference.cache
+E:\Documents\Ignite\Dev\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+E:\Documents\Ignite\Dev\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.exe
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.pdb
+C:\Student\Presentations+Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.csprojResolveAssemblyReference.cache
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.exe
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.pdb
+D:\Presentations & Demos\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.csprojResolveAssemblyReference.cache
+D:\Dev\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+D:\Dev\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+D:\04 Apps For SharePoint\06_CsomRestApi\DemoFiles\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\SharePoint 2013 Dev MOC\Demos\08\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.exe
+D:\SharePoint 2013 Dev MOC\Demos\08\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.pdb
+D:\SharePoint 2013 Dev MOC\Demos\08\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.exe
+D:\SharePoint 2013 Dev MOC\Demos\08\CSOM_ManageClient\CSOM_ManageClient\bin\Debug\CSOM_ManageClient.pdb
+D:\SharePoint 2013 Dev MOC\Demos\08\CSOM_ManageClient\CSOM_ManageClient\obj\Debug\CSOM_ManageClient.csprojResolveAssemblyReference.cache

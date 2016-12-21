@@ -1,0 +1,118 @@
+******** Ex 2, Task 2: Add Code to Register the ItemAdded Event Receiver When the Feature Is Activated ********
+******** Steps 2-3 ********
+
+private static void AddItemAddingReceiver(SPFeatureReceiverProperties properties)
+{
+   using (var site = properties.Feature.Parent as SPSite)
+   {
+      using (var web = site.RootWeb)
+      {       
+		// Get the Vacation Request content type.
+		var vacationRequestCT = web.ContentTypes["Vacation Request"];
+		if (vacationRequestCT != null)
+		{   
+		   SPEventReceiverDefinition erd = vacationRequestCT.EventReceivers.Add();
+		   erd.Assembly = "[AssemblyNamePlaceholder]";
+		   erd.Class = "VacationRequestsEventReceiver.VacationRequestEventReceiver";
+		   erd.Type = SPEventReceiverType.ItemAdding;
+		   erd.Name = itemAddingName;
+		   erd.Synchronization = SPEventReceiverSynchronization.Synchronous;
+		   erd.SequenceNumber = 10050;
+		   erd.Update();
+		   vacationRequestCT.Update(true);
+		}
+  
+      }
+   }
+}
+
+
+******** Ex 2, Task 3: Add Code to Register the ItemUpdated Event Receiver When the Feature Is Activated ********
+******** Steps 3-4 ********
+
+private void AddItemUpdatedReceiver(SPFeatureReceiverProperties properties)
+{
+   using (var site = properties.Feature.Parent as SPSite)
+   {
+      using (var web = site.RootWeb)
+      {
+		// Get the Vacation Request content type.
+		var vacationRequestCT = web.ContentTypes["Vacation Request"];
+		if (vacationRequestCT != null)
+		{
+		   SPEventReceiverDefinition erd = vacationRequestCT.EventReceivers.Add();
+		   erd.Assembly = "[AssemblyNamePlaceholder]";
+		   erd.Class = "VacationRequestsEventReceiver.VacationRequestEventReceiver";
+		   erd.Type = SPEventReceiverType.ItemUpdated;
+		   erd.Name = itemUpdatedName;
+		   erd.Synchronization = SPEventReceiverSynchronization.Synchronous;
+		   erd.SequenceNumber = 10050;
+		   erd.Update();
+		   vacationRequestCT.Update(true);
+		}
+      }
+   }
+}
+
+
+******** Ex 2, Task 4: Add Code to Remove the ItemAdding Event Receiver When the Feature Is Deactivated ********
+******** Steps 1-2 ********
+
+private static void RemoveItemAddingReceiver(SPFeatureReceiverProperties properties)
+{
+   using (var site = properties.Feature.Parent as SPSite)
+   {
+      using (var web = site.RootWeb)
+      {
+		var vacationRequestCT = web.ContentTypes["Vacation Request"];
+		if (vacationRequestCT != null)
+		{
+		   Guid existingEventReceiverId = Guid.Empty;
+		   foreach (SPEventReceiverDefinition eventReceiver in vacationRequestCT.EventReceivers)
+		   {
+		      if (String.Equals(eventReceiver.Name, itemAddingName))
+		      {
+		         existingEventReceiverId = eventReceiver.Id;
+		      }
+		   }
+		   if (!existingEventReceiverId.Equals(Guid.Empty))
+		   {
+		      vacationRequestCT.EventReceivers[existingEventReceiverId].Delete();
+		      vacationRequestCT.Update(true);
+		   }
+		}
+      }
+   }
+}
+
+
+******** Ex 2, Task 5: Add Code to Remove the ItemUpdated Event Receiver When the Feature Is Deactivated ********
+******** Steps 1-2 ********
+
+private static void RemoveItemUpdatedReceiver(SPFeatureReceiverProperties properties)
+{
+   using (var site = properties.Feature.Parent as SPSite)
+   {
+      using (var web = site.RootWeb)
+      {
+		var vacationRequestCT = web.ContentTypes["Vacation Request"];
+		if (vacationRequestCT != null)
+		{
+		   Guid existingEventReceiverId = Guid.Empty;
+		   foreach (SPEventReceiverDefinition eventReceiver in vacationRequestCT.EventReceivers)
+		   {
+		      if (String.Equals(eventReceiver.Name, itemUpdatedName))
+		      {
+		         existingEventReceiverId = eventReceiver.Id;
+		      }
+		   }
+		   if (!existingEventReceiverId.Equals(Guid.Empty))
+		   {
+		      vacationRequestCT.EventReceivers[existingEventReceiverId].Delete();
+		      vacationRequestCT.Update(true);
+		   }
+		}
+      }
+   }
+}
+

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0a59131f-c715-4baa-87f0-d32b7999e522}"
+       Name="Positive"
+       DisplayName="Positive?"
+       Type="Boolean"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

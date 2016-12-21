@@ -1,0 +1,12 @@
+C:\Completed\Presentations+Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\bin\Debug\CrossDomainApp.pdb
+C:\Completed\Presentations+Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.dll
+C:\Completed\Presentations+Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.pdb
+D:\Presentations & Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\bin\Debug\CrossDomainApp.pdb
+D:\Presentations & Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.dll
+D:\Presentations & Demos\04_AppModelSpHosted\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.pdb
+D:\SharePoint 2013 Dev MOC\Demos\07\CrossDomainDemo\CrossDomainApp\bin\Debug\CrossDomainApp.pdb
+D:\SharePoint 2013 Dev MOC\Demos\07\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.dll
+D:\SharePoint 2013 Dev MOC\Demos\07\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\CrossDomainDemo\CrossDomainApp\bin\Debug\CrossDomainApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.dll
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\CrossDomainDemo\CrossDomainApp\obj\Debug\CrossDomainApp.pdb

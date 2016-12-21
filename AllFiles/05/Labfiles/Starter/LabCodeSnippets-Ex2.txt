@@ -1,0 +1,13 @@
+******** Ex 2, Task 1: Modify a web part to retrieve a value from the site property bag ********
+******** Step 5 ********
+
+writer.Write("Please record your expenses in the departmental expenses list.");
+
+SPWeb web = SPContext.Current.Web;
+string keyName = "ContosoDepartmentalExpenseTotal";
+
+if(web.Properties[keyName] != null)
+{
+    string expenseTotal = web.Properties[keyName];
+    writer.Write("<p>Estimated departmental expense total is: " + expenseTotal + "</p>");
+}

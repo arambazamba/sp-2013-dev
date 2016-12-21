@@ -1,0 +1,78 @@
+******** Ex 2, Task 1: Implement Search Functionality ********
+******** getPickerEntity method ********
+PickerEntity newEntity = CreatePickerEntity();
+newEntity.Claim = CreateClaim(LocationClaimType, ClaimValue, LocationClaimValueType);
+newEntity.Description = ProviderDisplayName + ":" + ClaimValue;
+newEntity.DisplayText = ClaimValue;
+newEntity.EntityData[PeopleEditorEntityDataKeys.DisplayName] = ClaimValue; 
+newEntity.EntityType = SPClaimEntityTypes.FormsRole;
+newEntity.IsResolved = true;
+newEntity.EntityGroupName = "Location";
+return newEntity;
+
+
+******** Ex 2, Task 1: Implement Search Functionality ********
+******** FillSearch method ********
+if (!EntityTypesContain(entityTypes, SPClaimEntityTypes.FormsRole))
+{
+    return;
+}
+
+int locationNode = -1;
+SPProviderHierarchyNode matchesNode = null;
+
+foreach (string location in possibleLocations)
+{
+    locationNode ++;
+    if (location.ToLower().StartsWith(searchPattern.ToLower())) 
+    {
+        PickerEntity newEntity = getPickerEntity(location);
+        if (!searchTree.HasChild(locationKeys[locationNode]))
+        {
+            matchesNode = new SPProviderHierarchyNode(
+            ProviderInternalName, 
+            locationLabels[locationNode],
+            locationKeys[locationNode],
+            true);
+        }
+        else
+        {
+            matchesNode = searchTree.Children.Where(
+            theNode => theNode.HierarchyNodeID == locationKeys[locationNode]).First();
+        }
+        matchesNode.AddEntity(newEntity);
+    }
+}
+
+
+******** Ex 2, Task 1: Implement Search Functionality ********
+******** SupportsSearch method ********
+get { return true; }
+
+
+******** Ex 2, Task 2: Implement Resolve Functionality ********
+******** FillResolve method ********
+if (!EntityTypesContain(entityTypes, SPClaimEntityTypes.FormsRole))
+{
+    return;
+}
+foreach (string location in possibleLocations)
+{
+    if (location.ToLower() == resolveInput.ToLower())
+    {
+        PickerEntity newEntity = getPickerEntity(location);
+        resolved.Add(newEntity);
+    }
+}
+
+******** Ex 2, Task 2: Implement Resolve Functionality ********
+******** SupportsResolve method ********
+get { return true; }
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+d:\WebProxyApp\WebProxyApp\bin\Debug\WebProxyApp.pdb
+d:\WebProxyApp\WebProxyApp\obj\Debug\WebProxyApp.dll
+d:\WebProxyApp\WebProxyApp\obj\Debug\WebProxyApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\WebProxyApp\WebProxyApp\bin\Debug\WebProxyApp.pdb
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\WebProxyApp\WebProxyApp\obj\Debug\WebProxyApp.dll
+D:\Sharepoint Mastering JS Dev\08 Add-Ins\WebProxyApp\WebProxyApp\obj\Debug\WebProxyApp.pdb

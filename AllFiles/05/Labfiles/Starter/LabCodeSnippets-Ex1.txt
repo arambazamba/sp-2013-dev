@@ -1,0 +1,55 @@
+******** Ex 1, Task 2: Create an event receiver ********
+******** Step 6 ********
+
+private void UpdatePropertyBag(SPWeb web, double change)
+{
+    string keyName = "ContosoDepartmentalExpenseTotal";
+    
+    double currentValue = 0;
+
+    if(web.Properties[keyName] != null)
+    {
+        currentValue = double.Parse(web.Properties[keyName]);
+    }
+    else
+    {
+        web.Properties.Add(keyName, "");
+    }
+
+    currentValue += change;
+
+    web.Properties[keyName] = currentValue.ToString();
+
+    web.Properties.Update();
+}
+
+
+******** Ex 1, Task 2: Create an event receiver ********
+******** Step 7 ********
+public override void ItemAdding(SPItemEventProperties properties)
+{
+    double invoiceValue = double.Parse(properties.AfterProperties["InvoiceTotal"] as string);    
+    UpdatePropertyBag(properties.Web, invoiceValue);
+}
+
+
+******** Ex 1, Task 2: Create an event receiver ********
+******** Step 8 ********
+public override void ItemUpdating(SPItemEventProperties properties)
+{
+    double previousInvoiceValue = (double)properties.ListItem["InvoiceTotal"];
+    double newInvoiceValue = double.Parse(properties.AfterProperties["InvoiceTotal"] as string);
+    double change = newInvoiceValue - previousInvoiceValue;
+    UpdatePropertyBag(properties.Web, change);
+}
+
+
+******** Ex 1, Task 2: Create an event receiver ********
+******** Step 9 ********
+public override void ItemDeleting(SPItemEventProperties properties)
+{
+    double invoiceValue = double.Parse(properties.BeforeProperties["InvoiceTotal"] as string);    
+    UpdatePropertyBag(properties.Web, -invoiceValue);
+}
+
+

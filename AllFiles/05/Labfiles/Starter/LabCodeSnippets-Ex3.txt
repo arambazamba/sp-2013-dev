@@ -1,0 +1,109 @@
+******** Ex 3, Task 2: Create a timer job definition ********
+******** Step 6 ********
+
+public ContosoExpensesOverviewTimerJob()
+{
+}
+
+
+******** Ex 3, Task 2: Create a timer job definition ********
+******** Step 7 ********
+public ContosoExpensesOverviewTimerJob(string name, SPWebApplication webApplication, SPServer server, SPJobLockType lockType)
+    : base(name, webApplication, server, lockType)
+{
+}
+
+
+******** Ex 3, Task 2: Create a timer job definition ********
+******** Step 8 ********
+public override void Execute(Guid targetInstanceId)
+{
+   // Obtain a reference to the managers site collection.
+   using (SPSite managerSite = new SPSite("http://managers.contoso.com"))
+   {
+      // Obtain a reference to the managers site.
+      using (SPWeb managerWeb = managerSite.RootWeb)
+      {
+         // Obtain a reference to the expense overview list.
+         SPList overviewList = managerWeb.Lists["Expenses Overview"];
+
+         // Remove all existing items from the list.
+         while (overviewList.Items.Count > 0)
+         {
+            overviewList.Items[0].Delete();
+            overviewList.Update();
+         }
+
+         // Iterate through each site collection in the current web application.
+         foreach (SPSite departmentSite in this.WebApplication.Sites)
+         {
+            using (SPWeb departmentWeb = departmentSite.RootWeb)
+            {
+               // Get the Contoso Expenses list, if one exists.
+               SPList expensesList = departmentWeb.Lists.TryGetList("Contoso Expenses");
+               if (expensesList != null)
+               {
+                  // Calculate the total for the department. 
+                  double departmentTotal = 0;
+                  foreach (SPListItem expense in departmentWeb.Lists["Contoso Expenses"].Items)
+                  {
+                     departmentTotal += (double)expense["InvoiceTotal"];
+                  }
+
+                  // Use the site URL to determine the department name.
+                  Uri url = new Uri(departmentWeb.Url);
+                  string hostName = url.GetComponents(UriComponents.Host, UriFormat.Unescaped);
+                  string[] hostNameComponents = hostName.Split('.');
+
+                  // Create a new item in the expense overview list.
+                  SPListItem overviewItem = overviewList.Items.Add();
+                  overviewItem["Title"] = hostNameComponents[0];
+                  overviewItem["Expense Total"] = departmentTotal;
+                  overviewItem.Update();
+                  overviewList.Update();
+               }                            
+            }
+            departmentSite.Dispose();
+         }
+      }
+   }
+}
+
+
+******** Ex 3, Task 3: Deploy the timer job ********
+******** Step 9 ********
+private void deleteJob(SPWebApplication webApplication)
+{
+    foreach(SPJobDefinition job in webApplication.JobDefinitions)
+    {
+        if(job.Name.Equals(timerJobName))
+        {
+            job.Delete();
+        }
+    }
+}
+
+
+******** Ex 3, Task 3: Deploy the timer job ********
+******** Step 11 ********
+SPWebApplication webApplication = ((SPSite)properties.Feature.Parent).WebApplication;
+
+deleteJob(webApplication);
+
+ContosoExpensesOverviewTimerJob timerJob = new ContosoExpensesOverviewTimerJob(timerJobName,webApplication, null, SPJobLockType.Job);
+
+SPMinuteSchedule schedule = new SPMinuteSchedule();
+schedule.BeginSecond = 1;
+schedule.EndSecond = 5;
+schedule.Interval = 2;
+
+timerJob.Schedule = schedule;
+
+timerJob.Update();
+
+
+******** Ex 3, Task 3: Deploy the timer job ********
+******** Step 13 ********
+SPWebApplication webApplication = ((SPSite)properties.Feature.Parent).WebApplication;
+deleteJob(webApplication);
+

@@ -1,0 +1,9 @@
+            var site = properties.Feature.Parent as SPSite;
+            var web = site.RootWeb;
+            SPContentType contractingCT = web.ContentTypes[ctid];
+
+            if (contractingCT != null)
+            {
+                // Delete the site content type.
+                web.ContentTypes.Delete(ctid);
+            }

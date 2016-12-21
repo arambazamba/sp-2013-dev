@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AddjQuery">
+    <File Path="AddjQuery\Sample.txt" Url="AddjQuery/Sample.txt" ReplaceContent="TRUE" />
+  </Module>
+  <CustomAction
+  ScriptSrc="~Site/Scripts/jquery-1.7.1.js"
+  Location="ScriptLink"
+  Sequence="10">
+  </CustomAction>
+  <CustomAction
+    ScriptSrc="~Site/Scripts/jquery-ui.js"
+    Location="ScriptLink"
+    Sequence="20">
+  </CustomAction>
+</Elements>

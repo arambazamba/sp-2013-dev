@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="076df7ee-9897-42b2-b373-0ab76f0efda2" 
+        solutionId="076df7ee-9897-42b2-b373-0ab76f0efda2" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ChromeApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="e8c33550-4b90-4754-b1cd-c31064e60d09" />
+  </features>
+</package>

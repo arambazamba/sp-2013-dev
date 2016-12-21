@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100C11ADEC5FD1D46BCA743A42BC1D51DD4" Name="Vote" Group="Custom Content Types" Description="A vote records a positive or negative response to a suggestion" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0899bc2a-2761-4039-82cc-714aebc91773}" DisplayName="Suggestion Lookup" Required="TRUE" Name="SuggestionLookup" />
+      <FieldRef ID="{0a59131f-c715-4baa-87f0-d32b7999e522}" DisplayName="Positive?" Required="TRUE" Name="Positive" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

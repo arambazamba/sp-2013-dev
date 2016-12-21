@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="8f44c24c-f75e-4a70-9090-cbfa0fd8d9bf" 
+        solutionId="8f44c24c-f75e-4a70-9090-cbfa0fd8d9bf" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ExceptionHandlingScope"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="fe1d2a58-b52b-49a0-b493-d83bccaad388" />
+  </features>
+</package>

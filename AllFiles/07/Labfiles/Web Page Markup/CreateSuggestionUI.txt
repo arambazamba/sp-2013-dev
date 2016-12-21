@@ -1,0 +1,18 @@
+    <div id="new-item-form">
+        Please enter your suggestion here:
+        <div class="new-item-form-line">
+            <span class="new-item-form-label">Subject:</span>
+            <span class="new-item-form-field">
+                <input id="subject-input" class="new-item-form-control" type="text" />
+            </span>
+        </div>
+        <div class="new-item-form-line">
+            <span class="new-item-form-label">Feedback:</span>
+            <span class="new-item-form-field">
+                <textarea rows="5" cols="50" class="new-item-form-control" id="feedback-input"></textarea>
+            </span>
+        </div>
+        <div>
+            <input type="submit" onclick="Contoso.SuggestionsApp.create_suggestion();" />
+        </div>
+    </div>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{602E3C96-EFC9-4D2C-85E7-FF710FD445D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VacationRequests</RootNamespace>
+    <AssemblyName>VacationRequests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContosoDepartment\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c83a35b-91e4-42d6-822d-8a573a94c9dc}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\VacationRequests\VacationRequests.feature">
+      <FeatureId>{91cd8b13-502d-4c1e-b13a-bacf2d3fe30b}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="LineManager\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{afe09e2a-4dfc-4dbf-a0a4-9bddf51567de}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{91350e4f-75b1-40a3-afca-d794266278c9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="VacationRequestStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6037b67f-e194-4ef5-9b34-cb00ac3cb10b}</SharePointProjectItemId>
+    </None>
+    <None Include="VacationRequests\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a614e309-7d8b-4315-9f74-b985368b5b13}</SharePointProjectItemId>
+    </None>
+    <None Include="VacationRequests\VacationRequestsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d8696b6-0095-4ab7-92e3-83636371add5}</SharePointProjectItemId>
+    </None>
+    <None Include="VacationRequest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{980f4886-8246-4a3b-919e-ffd311efeda5}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContosoDepartment\Elements.xml" />
+    <Content Include="Features\VacationRequests\VacationRequests.Template.xml">
+      <DependentUpon>VacationRequests.feature</DependentUpon>
+    </Content>
+    <Content Include="LineManager\Elements.xml" />
+    <Content Include="VacationRequestStatus\Elements.xml" />
+    <Content Include="VacationRequests\Elements.xml" />
+    <Content Include="VacationRequests\Schema.xml" />
+    <Content Include="VacationRequests\VacationRequestsInstance\Elements.xml" />
+    <Content Include="VacationRequest\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

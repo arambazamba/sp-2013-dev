@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode title="Root" url="http://publishing.contoso.com">
+    <siteMapNode title="North" url="http://north.contoso.com" />
+    <siteMapNode title="South" url="http://south.contoso.com" />
+    <siteMapNode title="East" url="http://east.contoso.com" />
+    <siteMapNode title="West" url="http://west.contoso.com" />
+  </siteMapNode>
+</siteMap>

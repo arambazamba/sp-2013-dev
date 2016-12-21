@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="UsingSPMetal.VisualWebPart1.UsingSPMetalWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Using SPMetal</property>
+        <property name="Description" type="string">Demonstrates how to use the SPMetal tool in a Visual Studio project.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

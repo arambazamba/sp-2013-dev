@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Votes" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Votes" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100b7613aeabf824e2481a1113b2080df08" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{0899bc2a-2761-4039-82cc-714aebc91773}" Name="SuggestionLookup" /><FieldRef ID="{0a59131f-c715-4baa-87f0-d32b7999e522}" Name="Positive" /></FieldRefs></ContentType><ContentType ID="0x0100C11ADEC5FD1D46BCA743A42BC1D51DD4" Name="Vote" Group="Custom Content Types" Description="A vote records a positive or negative response to a suggestion" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{0899bc2a-2761-4039-82cc-714aebc91773}" DisplayName="Suggestion Lookup" Required="TRUE" Name="SuggestionLookup" /><FieldRef ID="{0a59131f-c715-4baa-87f0-d32b7999e522}" DisplayName="Positive?" Required="TRUE" Name="Positive" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{0899bc2a-2761-4039-82cc-714aebc91773}" Name="SuggestionLookup" DisplayName="Suggestion Lookup" Type="Lookup" List="Lists/Suggestions" ShowField="Subject" Required="TRUE" Group="Custom Site Columns"></Field><Field ID="{0a59131f-c715-4baa-87f0-d32b7999e522}" Name="Positive" DisplayName="Positive?" Type="Boolean" Required="TRUE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="SuggestionLookup" /><FieldRef Name="Positive" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Announcements"
+                OnQuickLaunch="TRUE"
+                TemplateType="104"
+                FeatureId="00bfea71-d1ce-42de-9c63-a44004ce0104"
+                Url="Lists/Announcements"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Server Outage</Field>
+          <Field Name="Body">There will be a server outage next Tuesday</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Company Daycare</Field>
+          <Field Name="Body">Company Daycare will be closed Monday to coincide with the holiday.</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Volunteer Day</Field>
+          <Field Name="Body">Next Wednesday is Volunteer Day.  Get out there!</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Shareholder Meeting</Field>
+          <Field Name="Body">There will be a Shareholder Meeting on Thursday.</Field>
+        </Row>
+
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

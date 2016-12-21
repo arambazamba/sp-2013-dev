@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="0f92c53d-9d07-41b8-b953-c6a0c1d7a0ea" 
+        solutionId="0f92c53d-9d07-41b8-b953-c6a0c1d7a0ea" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="VisualWebPart"
+        sharePointProductVersion="15.0">
+</package>

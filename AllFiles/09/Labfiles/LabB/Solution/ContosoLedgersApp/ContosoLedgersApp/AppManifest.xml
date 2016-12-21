@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="ContosoLedgersApp"
+     ProductID="{4a31086a-4bcf-46e7-828c-0a92609dd73d}"
+     Version="1.0.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>Contoso Ledgers App</Title>
+    <StartPage>~remoteAppUrl/Pages/Default.aspx?{StandardTokens}&amp;SPHostTitle={HostTitle}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="66142967-91BB-4C50-9B70-06375D5240BC" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read" />
+  </AppPermissionRequests>
+</App>

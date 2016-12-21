@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3355c766-1970-4dce-9ccc-4fe0118df238}"
+       Name="LineManager"
+       DisplayName="Line Manager"
+       Type="User"
+       Required="TRUE"
+       Group="Contoso Columns">
+  </Field>
+</Elements>

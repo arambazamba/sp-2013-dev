@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{1b185141-dd01-4c2e-8be2-8f18bbc686ef}"
+       Name="ClientName"
+       DisplayName="Client Name"
+       Type="Text"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

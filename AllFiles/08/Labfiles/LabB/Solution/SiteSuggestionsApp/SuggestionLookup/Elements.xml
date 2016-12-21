@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0899bc2a-2761-4039-82cc-714aebc91773}"
+       Name="SuggestionLookup"
+       DisplayName="Suggestion Lookup"
+       Type="Lookup"
+       List="Lists/Suggestions"
+       ShowField="Subject"
+       Required="TRUE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

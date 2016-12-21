@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a2a6f391-f7ab-4580-bfcc-6654dea16f30" solutionId="a2a6f391-f7ab-4580-bfcc-6654dea16f30" resetWebServer="false" sharePointProductVersion="15.0" name="SandboxSolutionValidation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5145a0b6-517b-474d-bd4c-b0fe6f1d3179" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="95cd0423-2e31-4d69-b033-83c9edff1efc" />
+  </projectItems>
+</package>

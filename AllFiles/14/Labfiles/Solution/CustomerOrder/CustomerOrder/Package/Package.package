@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="9b2d79a2-c62d-43db-8c7c-13df7f6f9501" 
+        solutionId="9b2d79a2-c62d-43db-8c7c-13df7f6f9501" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="CustomerOrder"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="34ff0b04-26bc-4d86-a574-c59d1125aabb" />
+  </features>
+</package>

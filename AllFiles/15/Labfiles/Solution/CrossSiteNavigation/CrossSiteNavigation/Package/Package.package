@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="893ee322-ca6e-4f61-b67f-8b5ea291c66d" solutionId="893ee322-ca6e-4f61-b67f-8b5ea291c66d" resetWebServer="false" sharePointProductVersion="15.0" name="CrossSiteNavigation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b1d53e42-bd62-4e72-ade4-06df69fe6f08" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c23923a9-0505-49ec-9fa7-7c859450ee8a" />
+  </projectItems>
+</package>

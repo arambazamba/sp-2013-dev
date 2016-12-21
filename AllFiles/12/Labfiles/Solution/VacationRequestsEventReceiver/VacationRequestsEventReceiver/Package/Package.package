@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0c18a0a9-9e56-4756-bcc3-74ec12b0564b" solutionId="0c18a0a9-9e56-4756-bcc3-74ec12b0564b" resetWebServer="false" sharePointProductVersion="15.0" name="VacationRequestsEventReceiver" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5d2648ce-2e15-4683-9629-1cd68d868f60" />
+  </features>
+</package>

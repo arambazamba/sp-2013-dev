@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fdbe6858-f68c-4add-a423-85e9230dd245}"
+       Name="InvoiceDueDate"
+       DisplayName="Due Date"
+       Type="DateTime"
+       Format="DateOnly"       
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{b842a90d-1696-4f84-a812-6dda2a42080d}"
+       Name="SecurityCleared"
+       DisplayName="Security Cleared"
+       Type="Boolean"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

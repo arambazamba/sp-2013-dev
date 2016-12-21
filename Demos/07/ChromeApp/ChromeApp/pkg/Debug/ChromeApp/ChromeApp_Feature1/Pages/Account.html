@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Settings</title>
+
+    <script src="../Scripts/sp.ui.controls.js" type="text/javascript">
+    </script>
+</head>
+<body>
+        <!-- Note the use of siteUrl to reference the site for the theming  -->
+    <div id="chrome_ctrl_container" data-ms-control="SP.UI.Controls.Navigation" data-ms-options='{  
+                "siteUrl" : "http://intranet.contoso.com/sites/SPHostedApps",
+                "appHelpPageUrl" : "../Pages/Help.html",
+                "appIconUrl" : "../Images/appIcon.png",
+                "appTitle" : "Chrome Control",
+                "settingsLinks" : [
+                    {
+                        "linkUrl" : "../Pages/Account.html",
+                        "displayName" : "Account settings"
+                    },
+                    {
+                        "linkUrl" : "../Pages/Contact.html",
+                        "displayName" : "Contact us"
+                    }
+                ]
+             }'>
+    </div>
+
+    <div style="margin: 50px">
+        <h3>Account Settings Page</h3>
+        <table cellspacing="3" cellpadding="3" border="0">
+            <tr>
+                <td>Store Personal Infomartion</td>
+                <td>
+                    <input type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td>E-Mail Address</td>
+                <td>
+                    <input type="text" value="administrator@contoso.com" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

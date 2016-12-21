@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{19e88fc4-5aa3-44f7-ba89-702ddf9e4372}"
+       Name="AgreementEndDate"
+       DisplayName="Agreement End Date"
+       Type="DateTime"
+       Format="DateOnly"
+       Required="TRUE"
+       Group="Contoso Site Columns">
+  </Field>
+</Elements>

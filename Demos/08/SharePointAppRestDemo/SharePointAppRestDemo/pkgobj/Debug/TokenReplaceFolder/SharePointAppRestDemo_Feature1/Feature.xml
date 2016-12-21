@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="1faacd54-305e-48f8-9d95-fb6dcb57d1d3" Scope="Web" Title="SharePointAppRestDemo Feature1" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\EditCustomer.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2-vsdoc.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.js" />
+    <ElementFile Location="Scripts\jsrender.js" />
+    <ElementFile Location="Scripts\EditCustomer.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\images\FeatureIcon.gif" />
+    <ElementFile Location="Content\images\favicon.ico" />
+    <ElementFile Location="Content\images\logo16.gif" />
+    <ElementFile Location="Content\images\logo32.gif" />
+    <ElementFile Location="Content\images\SiteIcon.gif" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="Customers\Elements.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+        <ElementManifest Location="Customers\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

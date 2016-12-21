@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="79e9d37b-86c5-4abf-bd47-3497a1e8e17d" 
+        solutionId="79e9d37b-86c5-4abf-bd47-3497a1e8e17d" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="WebProxyApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="a9cd5409-c9cd-4cb1-a7e1-f0a6fb26ca82" />
+  </features>
+</package>

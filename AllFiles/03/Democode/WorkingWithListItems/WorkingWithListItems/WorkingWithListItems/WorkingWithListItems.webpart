@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="WorkingWithListItems.VisualWebPart1.WorkingWithListItems, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Working With List Items</property>
+        <property name="Description" type="string">A visual web part that demonstrates adding list items to a list programmatically.</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

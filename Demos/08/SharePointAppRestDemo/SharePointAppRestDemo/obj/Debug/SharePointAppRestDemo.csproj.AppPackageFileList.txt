@@ -1,0 +1,1 @@
+C:\Demos\SharePointAppRestDemo\SharePointAppRestDemo\bin\Debug\app.publish\SharePointAppRestDemo.app

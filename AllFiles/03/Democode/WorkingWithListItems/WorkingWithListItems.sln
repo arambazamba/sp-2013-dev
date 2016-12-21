@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithListItems", "WorkingWithListItems\WorkingWithListItems.csproj", "{F0D2C815-5350-4756-9483-9BB39CF02367}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0D2C815-5350-4756-9483-9BB39CF02367}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

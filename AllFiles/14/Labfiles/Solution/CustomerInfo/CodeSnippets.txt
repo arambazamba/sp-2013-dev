@@ -1,0 +1,21 @@
+function loadcssfile(filename, filetype) {
+
+    if (filetype == "css") { //if filename is an external CSS file
+        var fileref = document.createElement("link")
+        fileref.setAttribute("rel", "stylesheet")
+        fileref.setAttribute("type", "text/css")
+        fileref.setAttribute("href", filename)
+    }
+    if (typeof fileref != "undefined")
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+}
+
+function getQueryStringParameter(urlParameterKey) {
+    var params = document.URL.split("?")[1].split("&");
+    var strParams = "";
+    for (var i = 0; i < params.length; i = i + 1) {
+        var singleParam = params[i].split('=');
+        if (singleParam[0] == urlParameterKey)
+            return decodeURIComponent(singleParam[1]);
+    }
+}

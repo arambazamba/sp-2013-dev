@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100A0AC988302BA4EC2A792C4362C6BE5FA" Name="MileageClaim" Group="Custom Content Types" Description="This content type stores the details of mileage expenses claims" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{27e5b644-2051-4dcd-9fde-d00afe73850a}" DisplayName="Destination" Required="TRUE" Name="Destination" />
+      <FieldRef ID="{340b7522-ca7b-4c01-9679-8b6df4197523}" DisplayName="Reason For Trip" Required="TRUE" Name="ReasonForTrip" />
+      <FieldRef ID="{7c90ff3d-9c9e-4e3a-a0ca-dc1ceba1d849}" DisplayName="Miles" Required="TRUE" Name="Miles" />
+      <FieldRef ID="{b5b4403f-cd90-4d12-9d5f-b930455689d7}" DisplayName="Engine Size" Required="TRUE" Name="EngineSize" />
+      <FieldRef ID="{44375901-5a04-4e9a-a9f0-5040df5532ca}" DisplayName="Amount" Required="FALSE" Name="Amount" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
